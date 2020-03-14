@@ -1,5 +1,6 @@
 import tkinter as tk
 from snake_game import SnakeGame, SYMBOLS, DIRECTION_KEYS
+from snake_game_loop import SnakeGameLoop
 
 TICK_TIME = 75
 SIZE = 30
@@ -25,7 +26,7 @@ class SnakeGraphics:
         self._reset()
 
     def _reset(self):
-        self.game = SnakeGame(self.size)
+        self.game = SnakeGameLoop(self.size)
         self.board_memory = None
         self._draw_board()
         self.window.after(TICK_TIME, self._tick)

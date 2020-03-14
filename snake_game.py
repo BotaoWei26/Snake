@@ -59,7 +59,7 @@ class SnakeGame:
         self._set_board(self.head, SYMBOLS["head"])
         for seg in self.body:
             self._set_board(seg, SYMBOLS["body"])
-        self._set_board(self.food, SYMBOLS["food"] )
+        self._set_board(self.food, SYMBOLS["food"])
 
     def _place_food(self):
         ############# redo this

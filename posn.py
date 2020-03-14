@@ -10,3 +10,8 @@ class Posn:
         self.row += other[0]
         self.col += other[1]
         return self
+
+    def __imod__(self, other):
+        self.row %= other[0]
+        self.col %= other[1]
+        return self
