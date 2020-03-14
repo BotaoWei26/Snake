@@ -2,32 +2,48 @@ from posn import Posn
 from copy import copy
 from random import randint
 
-DIRECTIONS = {
-    "u": tuple((-1, 0)),
-    "r": tuple((0, 1)),
-    "d": tuple((1, 0)),
-    "l": tuple((0, -1))
+DIRECTION_KEYS = {
+    "RIGHT": "d",
+    "LEFT": "a",
+    "UP": "w",
+    "DOWN": "s"
 }
 
+DIRECTIONS = {
+    DIRECTION_KEYS["UP"]: tuple((-1, 0)),
+    DIRECTION_KEYS["RIGHT"]: tuple((0, 1)),
+    DIRECTION_KEYS["DOWN"]: tuple((1, 0)),
+    DIRECTION_KEYS["LEFT"]: tuple((0, -1))
+}
+
+SYMBOLS = {
+    "empty": "+",
+    "food": "f",
+    "head": "S",
+    "body": "s"
+}
+
+
 def same_direction(dir1, dir2):
-    horz = ["r", "l"]
-    vert = ["u", "d"]
+    horz = [DIRECTION_KEYS["RIGHT"], DIRECTION_KEYS["LEFT"]]
+    vert = [DIRECTION_KEYS["UP"], DIRECTION_KEYS["DOWN"]]
     return (dir1 in horz) != (dir2 in vert)
 
 
 class SnakeGame:
     def __init__(self, size):
         self.size = size
-        self.board = [["+" for _ in range(self.size)] for _ in range(self.size)]
+        self.board = [[SYMBOLS["empty"] for _ in range(self.size)] for _ in range(self.size)]
         self.head = Posn(3, 3)
         self.food = Posn(randint(0, self.size-1), randint(0,self.size-1))
         self.body = []
-        self.direction = "r"
+        self.direction = DIRECTION_KEYS["RIGHT"]
         self.game_over = False
+        self.turn_trigger = False
         self._set_snake()
 
     def _clear_board(self):
-        self.board = [["+" for _ in range(self.size)] for _ in range(self.size)]
+        self.board = [[SYMBOLS["empty"] for _ in range(self.size)] for _ in range(self.size)]
 
     def _set_board(self, p, s):
         self.board[p.row][p.col] = s
@@ -40,15 +56,16 @@ class SnakeGame:
 
     def _set_snake(self):
         self._clear_board()
-        self._set_board(self.head, "S")
+        self._set_board(self.head, SYMBOLS["head"])
         for seg in self.body:
-            self._set_board(seg, "s")
-        self._set_board(self.food, "F")
+            self._set_board(seg, SYMBOLS["body"])
+        self._set_board(self.food, SYMBOLS["food"] )
 
     def _place_food(self):
+        ############# redo this
         while True:
             self.food = Posn(randint(0, self.size - 1), randint(0, self.size - 1))
-            if self._get_board(self.food) == "+":
+            if self._get_board(self.food) == SYMBOLS["empty"]:
                 break
 
     def move_snake(self):
@@ -60,8 +77,8 @@ class SnakeGame:
             self.game_over = True
             return
 
-        hit_food = (self._get_board(self.head) == "F")
-        hit_body = (self._get_board(self.head) == "s")
+        hit_food = (self._get_board(self.head) == SYMBOLS["food"])
+        hit_body = (self._get_board(self.head) == SYMBOLS["body"])
 
         if hit_food:
             self.body.append(snake_end)
@@ -71,10 +88,12 @@ class SnakeGame:
             self.game_over = True
 
         self._set_snake()
+        self.turn_trigger = True
 
     def change_direction(self, direction):
-        if not same_direction(self.direction, direction):
+        if not same_direction(self.direction, direction) and self.turn_trigger:
             self.direction = direction
+            self.turn_trigger = False
 
     def pretty_print(self):
         if self.game_over:
@@ -85,3 +104,6 @@ class SnakeGame:
             for cell in row:
                 print(cell, end="")
             print()
+
+    def get_board(self):
+        return self.board
