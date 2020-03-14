@@ -1,5 +1,4 @@
 from snake_game import SnakeGame
-from posn import Posn
 
 
 class SnakeGameLoop(SnakeGame):

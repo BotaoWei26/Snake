@@ -3,7 +3,7 @@ from snake_game import SnakeGame, SYMBOLS, DIRECTION_KEYS
 from snake_game_loop import SnakeGameLoop
 
 TICK_TIME = 75
-SIZE = 30
+SIZE = 50
 TILE_SIZE = int(800 / SIZE)
 
 SYMBOLS_COLORS = {
@@ -27,19 +27,28 @@ class SnakeGraphics:
 
     def _reset(self):
         self.game = SnakeGameLoop(self.size)
-        self.board_memory = None
+        self.board_memory = self.game.get_board()
         self._draw_board()
         self.window.after(TICK_TIME, self._tick)
         self.game_over = False
+        self._set_board()
+
+    def _set_board(self):
+        self.board_rectangles = []
+        board = self.game.get_board()
+        for i, row in enumerate(board):
+            rectangles_row = []
+            for j, cell in enumerate(row):
+                rectangles_row.append(self.canvas.create_rectangle(TILE_SIZE * j, TILE_SIZE * i, TILE_SIZE * (j + 1), TILE_SIZE * (i + 1),
+                                    fill=SYMBOLS_COLORS[cell]))
+            self.board_rectangles.append(rectangles_row)
 
     def _draw_board(self):
         board = self.game.get_board()
         for i, row in enumerate(board):
             for j, cell in enumerate(row):
-                if self.board_memory is None or (self.board_memory is not None and self.board_memory[i][j] != cell):
-                    self.canvas.create_rectangle(TILE_SIZE * j, TILE_SIZE * i, TILE_SIZE * (j + 1), TILE_SIZE * (i + 1),
-                                                 fill=SYMBOLS_COLORS[cell])
-
+                if self.board_memory[i][j] != cell:
+                    self.canvas.itemconfig(self.board_rectangles[i][j], fill=SYMBOLS_COLORS[cell])
         self.board_memory = board
 
     def _tick(self):
