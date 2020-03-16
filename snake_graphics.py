@@ -1,10 +1,12 @@
 import tkinter as tk
 from snake_game import SnakeGame, SYMBOLS, DIRECTION_KEYS
 from snake_game_loop import SnakeGameLoop
+from math import ceil
+from dec import timeit
 
 TICK_TIME = 75
-SIZE = 50
-TILE_SIZE = int(600 / SIZE)
+SIZE = 25
+TILE_SIZE = ceil(600 / SIZE)
 
 SYMBOLS_COLORS = {
     SYMBOLS["empty"]: "white",
@@ -39,8 +41,9 @@ class SnakeGraphics:
         for i, row in enumerate(board):
             rectangles_row = []
             for j, cell in enumerate(row):
-                rectangles_row.append(self.canvas.create_rectangle(TILE_SIZE * j, TILE_SIZE * i, TILE_SIZE * (j + 1), TILE_SIZE * (i + 1),
-                                    fill=SYMBOLS_COLORS[cell]))
+                rectangles_row.append(self.canvas.create_rectangle(TILE_SIZE * j, TILE_SIZE * i,
+                                                                   TILE_SIZE * (j + 1), TILE_SIZE * (i + 1),
+                                                                   fill=SYMBOLS_COLORS[cell]))
             self.board_rectangles.append(rectangles_row)
 
     def _draw_board(self):

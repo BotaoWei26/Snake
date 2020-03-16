@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c1fa60c-7441-4388-92ff-08e2d91e4dbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main_graphics2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snake_graphics_multiplayer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dec.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/snek.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/snek.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snake_graphics.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_graphics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snake_graphics_multiplayer.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake_graphics_multiplayer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.main_graphics2">
+  <component name="RunManager" selected="Python.main_graphics2 (1)">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="snek" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,6 +97,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main_graphics2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="snek" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_graphics2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main_graphics2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="snek" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -119,6 +142,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_graphics2 (1)" />
         <item itemvalue="Python.main_graphics2" />
         <item itemvalue="Python.main_graphics" />
         <item itemvalue="Python.main" />
@@ -179,6 +203,10 @@
       <screen x="0" y="0" width="1460" height="864" />
     </state>
     <state x="458" y="48" key="#main/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584200572944" />
+    <state x="648" y="154" key="#main_graphics" timestamp="1584377210689">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="648" y="154" key="#main_graphics/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584377210689" />
     <state x="355" y="24" key="CommitChangelistDialog2" timestamp="1584207530201">
       <screen x="0" y="0" width="1460" height="864" />
     </state>
@@ -187,47 +215,47 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="799" y="433" key="Github.ShareDialog/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133740489" />
-    <state width="1417" height="196" key="GridCell.Tab.0.bottom" timestamp="1584294296629">
-      <screen x="0" y="0" width="1460" height="864" />
+    <state width="1837" height="334" key="GridCell.Tab.0.bottom" timestamp="1584381747545">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1417" height="196" key="GridCell.Tab.0.bottom/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584294296629" />
-    <state width="1837" height="227" key="GridCell.Tab.0.bottom/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133505943" />
-    <state width="1417" height="196" key="GridCell.Tab.0.center" timestamp="1584294296629">
-      <screen x="0" y="0" width="1460" height="864" />
+    <state width="1837" height="334" key="GridCell.Tab.0.bottom/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584381747545" />
+    <state width="1837" height="334" key="GridCell.Tab.0.center" timestamp="1584381747545">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1417" height="196" key="GridCell.Tab.0.center/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584294296629" />
-    <state width="1837" height="227" key="GridCell.Tab.0.center/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133505943" />
-    <state width="1417" height="196" key="GridCell.Tab.0.left" timestamp="1584294296629">
-      <screen x="0" y="0" width="1460" height="864" />
+    <state width="1837" height="334" key="GridCell.Tab.0.center/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584381747545" />
+    <state width="1837" height="334" key="GridCell.Tab.0.left" timestamp="1584381747545">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1417" height="196" key="GridCell.Tab.0.left/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584294296629" />
-    <state width="1837" height="227" key="GridCell.Tab.0.left/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133505943" />
-    <state width="1417" height="196" key="GridCell.Tab.0.right" timestamp="1584294296629">
-      <screen x="0" y="0" width="1460" height="864" />
+    <state width="1837" height="334" key="GridCell.Tab.0.left/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584381747545" />
+    <state width="1837" height="334" key="GridCell.Tab.0.right" timestamp="1584381747545">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1417" height="196" key="GridCell.Tab.0.right/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584294296629" />
-    <state width="1837" height="227" key="GridCell.Tab.0.right/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133505943" />
-    <state width="1837" height="227" key="GridCell.Tab.1.bottom" timestamp="1584133505943">
+    <state width="1837" height="334" key="GridCell.Tab.0.right/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584381747545" />
+    <state width="1837" height="384" key="GridCell.Tab.1.bottom" timestamp="1584380743350">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="227" key="GridCell.Tab.1.bottom/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133505943" />
-    <state width="1837" height="227" key="GridCell.Tab.1.center" timestamp="1584133505943">
+    <state width="1837" height="384" key="GridCell.Tab.1.bottom/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584380743350" />
+    <state width="1837" height="384" key="GridCell.Tab.1.center" timestamp="1584380743350">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="227" key="GridCell.Tab.1.center/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133505943" />
-    <state width="1837" height="227" key="GridCell.Tab.1.left" timestamp="1584133505943">
+    <state width="1837" height="384" key="GridCell.Tab.1.center/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584380743350" />
+    <state width="1837" height="384" key="GridCell.Tab.1.left" timestamp="1584380743350">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="227" key="GridCell.Tab.1.left/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133505943" />
-    <state width="1837" height="227" key="GridCell.Tab.1.right" timestamp="1584133505943">
+    <state width="1837" height="384" key="GridCell.Tab.1.left/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584380743350" />
+    <state width="1837" height="384" key="GridCell.Tab.1.right" timestamp="1584380743350">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1837" height="227" key="GridCell.Tab.1.right/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133505943" />
-    <state x="338" y="146" key="SettingsEditor" timestamp="1584200599581">
-      <screen x="0" y="0" width="1460" height="864" />
+    <state width="1837" height="384" key="GridCell.Tab.1.right/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584380743350" />
+    <state x="430" y="182" key="SettingsEditor" timestamp="1584377216749">
+      <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="338" y="146" key="SettingsEditor/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584200599581" />
-    <state x="430" y="182" key="SettingsEditor/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133526974" />
+    <state x="430" y="182" key="SettingsEditor/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584377216749" />
     <state x="323" y="166" key="Vcs.Push.Dialog.v2" timestamp="1584207536537">
       <screen x="0" y="0" width="1460" height="864" />
     </state>
@@ -236,10 +264,5 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="625" y="364" key="com.intellij.ide.util.TipDialog/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133521309" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Snake$main_graphics.coverage" NAME="main_graphics Coverage Results" MODIFIED="1584293867891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Snake$main.coverage" NAME="main Coverage Results" MODIFIED="1584201257298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Snake$snake_graphics2.coverage" NAME="main_graphics2 Coverage Results" MODIFIED="1584294296619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
