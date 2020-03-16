@@ -4,7 +4,7 @@ from snake_game_loop import SnakeGameLoop
 
 TICK_TIME = 75
 SIZE = 50
-TILE_SIZE = int(800 / SIZE)
+TILE_SIZE = int(600 / SIZE)
 
 SYMBOLS_COLORS = {
     SYMBOLS["empty"]: "white",
@@ -20,7 +20,7 @@ class SnakeGraphics:
         self.size = size
         self.window.title("Snake")
         self.window.geometry(str(TILE_SIZE * self.size) + "x" + str(TILE_SIZE * self.size))
-        self.canvas = tk.Canvas(self.window, width=TILE_SIZE * size, height=TILE_SIZE * self.size)
+        self.canvas = tk.Canvas(self.window, width=TILE_SIZE * self.size, height=TILE_SIZE * self.size)
         self.canvas.pack()
         self.window.bind("<Key>", self._key_input)
         self._reset()
