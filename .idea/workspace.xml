@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7c1fa60c-7441-4388-92ff-08e2d91e4dbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dec.py" afterDir="false" />
+    <list default="true" id="7c1fa60c-7441-4388-92ff-08e2d91e4dbf" name="Default Changelist" comment="Added SnakeGameLoop">
+      <change afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/snek.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/snek.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -109,6 +109,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_graphics2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -140,10 +141,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="snek" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main_graphics2 (1)" />
         <item itemvalue="Python.main_graphics2" />
+        <item itemvalue="Python.server" />
         <item itemvalue="Python.main_graphics" />
         <item itemvalue="Python.main" />
       </list>
@@ -172,6 +196,7 @@
       <option name="presentableId" value="Default" />
       <updated>1584127526086</updated>
       <workItem from="1584200552650" duration="14924000" />
+      <workItem from="1584464629183" duration="3526000" />
     </task>
     <task id="LOCAL-00001" summary="Added graphics">
       <created>1584206175721</created>
@@ -199,6 +224,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added SnakeGameLoop" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="185" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584466229579">
+      <screen x="0" y="0" width="1460" height="864" />
+    </state>
+    <state x="185" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1460.864@0.0.1460.864" timestamp="1584466229579" />
     <state x="458" y="48" key="#main" timestamp="1584200572944">
       <screen x="0" y="0" width="1460" height="864" />
     </state>
@@ -207,33 +236,42 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="648" y="154" key="#main_graphics/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584377210689" />
-    <state x="355" y="24" key="CommitChangelistDialog2" timestamp="1584207530201">
+    <state x="458" y="48" key="#main_graphics2_(1)" timestamp="1584463856062">
+      <screen x="0" y="0" width="1460" height="864" />
+    </state>
+    <state x="458" y="48" key="#main_graphics2_(1)/0.0.1460.864@0.0.1460.864" timestamp="1584463856062" />
+    <state x="355" y="24" key="CommitChangelistDialog2" timestamp="1584468180433">
       <screen x="0" y="0" width="1460" height="864" />
     </state>
     <state x="355" y="24" key="CommitChangelistDialog2/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584207530201" />
+    <state x="355" y="24" key="CommitChangelistDialog2/0.0.1460.864@0.0.1460.864" timestamp="1584468180433" />
     <state x="799" y="433" key="Github.ShareDialog" timestamp="1584133740489">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="799" y="433" key="Github.ShareDialog/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133740489" />
-    <state width="1837" height="334" key="GridCell.Tab.0.bottom" timestamp="1584381747545">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="1417" height="188" key="GridCell.Tab.0.bottom" timestamp="1584468007145">
+      <screen x="0" y="0" width="1460" height="864" />
     </state>
     <state width="1417" height="196" key="GridCell.Tab.0.bottom/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584294296629" />
+    <state width="1417" height="188" key="GridCell.Tab.0.bottom/0.0.1460.864@0.0.1460.864" timestamp="1584468007145" />
     <state width="1837" height="334" key="GridCell.Tab.0.bottom/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584381747545" />
-    <state width="1837" height="334" key="GridCell.Tab.0.center" timestamp="1584381747545">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="1417" height="188" key="GridCell.Tab.0.center" timestamp="1584468007145">
+      <screen x="0" y="0" width="1460" height="864" />
     </state>
     <state width="1417" height="196" key="GridCell.Tab.0.center/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584294296629" />
+    <state width="1417" height="188" key="GridCell.Tab.0.center/0.0.1460.864@0.0.1460.864" timestamp="1584468007145" />
     <state width="1837" height="334" key="GridCell.Tab.0.center/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584381747545" />
-    <state width="1837" height="334" key="GridCell.Tab.0.left" timestamp="1584381747545">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="1417" height="188" key="GridCell.Tab.0.left" timestamp="1584468007145">
+      <screen x="0" y="0" width="1460" height="864" />
     </state>
     <state width="1417" height="196" key="GridCell.Tab.0.left/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584294296629" />
+    <state width="1417" height="188" key="GridCell.Tab.0.left/0.0.1460.864@0.0.1460.864" timestamp="1584468007145" />
     <state width="1837" height="334" key="GridCell.Tab.0.left/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584381747545" />
-    <state width="1837" height="334" key="GridCell.Tab.0.right" timestamp="1584381747545">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state width="1417" height="188" key="GridCell.Tab.0.right" timestamp="1584468007145">
+      <screen x="0" y="0" width="1460" height="864" />
     </state>
     <state width="1417" height="196" key="GridCell.Tab.0.right/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584294296629" />
+    <state width="1417" height="188" key="GridCell.Tab.0.right/0.0.1460.864@0.0.1460.864" timestamp="1584468007145" />
     <state width="1837" height="334" key="GridCell.Tab.0.right/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584381747545" />
     <state width="1837" height="384" key="GridCell.Tab.1.bottom" timestamp="1584380743350">
       <screen x="0" y="0" width="1858" height="1080" />
@@ -251,18 +289,32 @@
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state width="1837" height="384" key="GridCell.Tab.1.right/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584380743350" />
-    <state x="430" y="182" key="SettingsEditor" timestamp="1584377216749">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state x="338" y="146" key="SettingsEditor" timestamp="1584463868590">
+      <screen x="0" y="0" width="1460" height="864" />
     </state>
     <state x="338" y="146" key="SettingsEditor/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584200599581" />
+    <state x="338" y="146" key="SettingsEditor/0.0.1460.864@0.0.1460.864" timestamp="1584463868590" />
     <state x="430" y="182" key="SettingsEditor/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584377216749" />
     <state x="323" y="166" key="Vcs.Push.Dialog.v2" timestamp="1584207536537">
       <screen x="0" y="0" width="1460" height="864" />
     </state>
     <state x="323" y="166" key="Vcs.Push.Dialog.v2/0.0.1460.864/1920.0.1920.1080@0.0.1460.864" timestamp="1584207536537" />
-    <state x="625" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1584133521309">
-      <screen x="0" y="0" width="1858" height="1080" />
+    <state x="491" y="291" key="com.intellij.ide.util.TipDialog" timestamp="1584464631031">
+      <screen x="0" y="0" width="1460" height="864" />
     </state>
+    <state x="491" y="291" key="com.intellij.ide.util.TipDialog/0.0.1460.864@0.0.1460.864" timestamp="1584464631031" />
     <state x="625" y="364" key="com.intellij.ide.util.TipDialog/0.0.1858.1080/1982.0.1858.1080@0.0.1858.1080" timestamp="1584133521309" />
+    <state x="540" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584464155230">
+      <screen x="0" y="0" width="1460" height="864" />
+    </state>
+    <state x="540" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1460.864@0.0.1460.864" timestamp="1584464155230" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Snake$main_graphics.coverage" NAME="main_graphics Coverage Results" MODIFIED="1584293867891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snake$server.coverage" NAME="server Coverage Results" MODIFIED="1584467870740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snake$main.coverage" NAME="main Coverage Results" MODIFIED="1584201257298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snake$snake_graphics2.coverage" NAME="main_graphics2 Coverage Results" MODIFIED="1584294296619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snake$main_graphics2.coverage" NAME="main_graphics2 Coverage Results" MODIFIED="1584467872728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Snake$main_graphics2__1_.coverage" NAME="main_graphics2 (1) Coverage Results" MODIFIED="1584467874424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

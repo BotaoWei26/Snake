@@ -31,9 +31,9 @@ class SnakeGraphics:
         self.game = SnakeGameLoop(self.size)
         self.board_memory = self.game.get_board()
         self._draw_board()
-        self.window.after(TICK_TIME, self._tick)
         self.game_over = False
         self._set_board()
+        self.window.after(TICK_TIME, self._tick)
 
     def _set_board(self):
         self.board_rectangles = []
